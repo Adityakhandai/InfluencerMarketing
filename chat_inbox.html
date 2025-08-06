@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Chat Inbox</h2>
+{% if chats %}
+    <ul class="list-group">
+        {% for chat in chats %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Chat with: {{ chat.email_id }}</span>
+                <div>
+                    <a href="{{ url_for('chat', influencer_id=chat.partner_id) }}" class="btn btn-primary btn-sm">Open Chat</a>
+                    <!-- <a href="{{ url_for('send_chat_email', partner_id=chat.partner_id) }}" class="btn btn-secondary btn-sm">Send Chat Email</a> -->
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No chats available.</p>
+{% endif %}
+{% endblock %}

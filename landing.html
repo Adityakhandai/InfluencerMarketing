@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section with Animation -->
+<div class="landing-hero text-center text-white d-flex align-items-center position-relative" style="min-height: 100vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://www.webhopers.com/wp-content/uploads/2024/04/Top-10-Influencer-Marketing-Agencies-in-Mumbai.png') no-repeat center center/cover; width: 100%;">
+  <div class="container">
+    <h1 class="display-3 fw-bold animate__animated animate__fadeInDown">Influencer Platform</h1>
+    <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s">Connect with top influencers to elevate your brand. Discover, hire, and collaborate with creative talent.</p>
+    <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg shadow animate__animated animate__fadeInUp animate__delay-2s">Get Started</a>
+  </div>
+  <!-- Animated scroll indicator -->
+
+</div>
+
+<!-- Features Section with Images and Animations -->
+<div class="container py-5">
+  <h2 class="text-center mb-5 fw-bold">Our Platform Features</h2>
+  <div class="row">
+    <div class="col-md-4 text-center mb-4 feature-card animate__animated animate__fadeInUp">
+      <div class="card h-100 shadow-sm p-4 border-0">
+        <img src="https://www.shutterstock.com/image-vector/creativity-help-see-business-opportunity-600nw-2076844117.jpg" alt="Discover Talent" class="img-fluid rounded-circle mx-auto mb-4" style="width: 150px; height: 150px; object-fit: cover;">
+        <i class="fas fa-users fa-3x text-primary mb-3"></i>
+        <h4 class="fw-bold">Discover Talent</h4>
+        <p>Browse profiles of top influencers across multiple niches and find the perfect match for your brand.</p>
+      </div>
+    </div>
+    <div class="col-md-4 text-center mb-4 feature-card animate__animated animate__fadeInUp animate__delay-1s">
+      <div class="card h-100 shadow-sm p-4 border-0">
+        <img src="https://c8.alamy.com/comp/G2NG8C/collaboration-chart-with-keywords-and-icons-sketch-G2NG8C.jpg" alt="Seamless Collaboration" class="img-fluid rounded-circle mx-auto mb-4" style="width: 150px; height: 150px; object-fit: cover;">
+        <i class="fas fa-handshake fa-3x text-primary mb-3"></i>
+        <h4 class="fw-bold">Seamless Collaboration</h4>
+        <p>Engage directly with influencers, discuss creative ideas, and manage campaigns effortlessly.</p>
+      </div>
+    </div>
+    <div class="col-md-4 text-center mb-4 feature-card animate__animated animate__fadeInUp animate__delay-2s">
+      <div class="card h-100 shadow-sm p-4 border-0">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuV4tijswM0cIV5NLrkznBfPQilFwF5azfuQ&s" alt="Boost Your Brand" class="img-fluid rounded-circle mx-auto mb-4" style="width: 150px; height: 150px; object-fit: cover;">
+        <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+        <h4 class="fw-bold">Boost Your Brand</h4>
+        <p>Increase your brand's visibility and reach new audiences with strategic influencer partnerships.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonials Section with Images -->
+<div class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">Success Stories</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-user-profile-avatar-png-image_10211467.png" alt="Testimonial 1" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;">
+            <p class="fst-italic">"This platform helped us find the perfect influencers for our brand launch. The ROI was incredible!"</p>
+            <h5 class="fw-bold">Sarah Johnson</h5>
+            <p class="text-muted">Marketing Director, FashionBrand</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <img src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes.png" alt="Testimonial 2" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;">
+            <p class="fst-italic">"As an influencer, I've found amazing opportunities and reliable clients through this platform."</p>
+            <h5 class="fw-bold">Michael Rodriguez</h5>
+            <p class="text-muted">Travel Influencer</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <img src="https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png" alt="Testimonial 3" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;">
+            <p class="fst-italic">"The analytics and campaign management tools are game-changers for measuring impact."</p>
+            <h5 class="fw-bold">Emma Thompson</h5>
+            <p class="text-muted">Digital Strategist, TechCorp</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Call-to-Action Section with Animation -->
+<div class="py-5 bg-primary text-white text-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 animate__animated animate__fadeIn">
+        <h2 class="fw-bold mb-4">Ready to Transform Your Marketing Strategy?</h2>
+        <p class="lead mb-4">Join thousands of brands and influencers creating successful partnerships.</p>
+        <a href="{{ url_for('register') }}" class="btn btn-light btn-lg px-5">Sign Up Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer with Social Media and Navigation -->
+<footer class="bg-dark text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold mb-3">Influencer Platform</h5>
+        <p>Connecting brands with top-tier influencers for impactful marketing campaigns since 2020.</p>
+        <div class="social-icons mt-3">
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="col-md-2 mb-4">
+        <h5 class="fw-bold mb-3">Platform</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none">For Brands</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none">For Influencers</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none">Pricing</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none">Features</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 mb-4">
+        <h5 class="fw-bold mb-3">Company</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none">About Us</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none">Careers</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none">Blog</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold mb-3">Subscribe to Our Newsletter</h5>
+        <p>Get the latest influencer marketing trends and tips.</p>
+        <form>
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Your email" aria-label="Your email">
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr class="mt-4 mb-3 bg-secondary">
+    <div class="row">
+      <div class="col-md-6 small">
+        <p class="mb-0">&copy; 2025 Influencer Platform. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-md-end small">
+        <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+        <a href="#" class="text-white text-decoration-none me-3">Terms of Service</a>
+        <a href="#" class="text-white text-decoration-none">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Add Animate.css for animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+<!-- Custom JS for animations -->
+<script>
+  // Scroll reveal animation for features
+  document.addEventListener('DOMContentLoaded', function() {
+    const observerOptions = {
+      threshold: 0.1
+    };
+    
+    const observer = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate__fadeInUp');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    document.querySelectorAll('.feature-card').forEach(card => {
+      card.classList.remove('animate__animated', 'animate__fadeInUp');
+      observer.observe(card);
+    });
+  });
+</script>
+{% endblock %}
